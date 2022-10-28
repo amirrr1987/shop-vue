@@ -1,0 +1,25 @@
+<template>
+    <section class="py-12 bg-light-200">
+        <div class="container mx-auto px-4">
+            <h3 class="mb-8 box-border font-semibold leading-tight xl:text-3xl text-[rgba(33,37,41,1)] text-[calc(1.3rem_+_0.6vw)]"> Why choose us</h3>
+            <div class="grid grid-cols-12 gap-4">
+                <template v-for="(item,index) in 6" :key="index">
+                    <figure class="grid grid-cols-[max-content,1fr] gap-4 col-span-4">
+                        <div class="rounded-full bg-white p-4 flex justify-center items-center">
+                            <Icon class="text-blue-500 text-3xl" icon="icon-park-outline:search" />
+                        </div>
+                        <figcaption>
+                            <h6 class="box-border block text-base font-semibold leading-tight text-[rgba(33,37,41,1)]">Worldwide shipping</h6>
+                            <p class="box-border ">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor </p>
+                        </figcaption>
+                    </figure>
+                </template>
+            </div>
+        </div>
+    </section>
+
+</template>
+<script setup lang="ts">
+import { Dropdown, Menu, MenuItem, Input, Form, FormItem, Button } from "ant-design-vue";
+import { Icon } from '@iconify/vue';
+</script>

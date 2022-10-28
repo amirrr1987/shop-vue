@@ -12,7 +12,7 @@ const router = createRouter({
       children: [
         {
           path: '/',
-          name: 'page-index-1',
+          name: 'pageIndex1',
           component: () => import('@/views/page-index-1.vue')
         },
         {

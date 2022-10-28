@@ -1,84 +1,77 @@
 <template>
-        <header class="section-header">
-            <section class="header-main">
-                <div class="container">
-                    <div class="row gy-3 align-items-center">
-                        <div class="col-lg-2 col-sm-4 col-4">
-                            <a href="http://bootstrap-ecommerce.com" class="navbar-brand">
-                                <img class="logo" height="40" src="@/assets/images/logo.svg">
-                            </a> <!-- brand end.// -->
-                        </div>
-                        <div class="order-lg-last col-lg-5 col-sm-8 col-8">
-                            <div class="float-end">
-                                <a href="#" class="btn btn-light">
-                                    <i class="fa fa-user"></i> <span class="ms-1 d-none d-sm-inline-block">Sign in </span>
-                                </a>
-                                <a href="#" class="btn btn-light">
-                                    <i class="fa fa-heart"></i> <span class="ms-1 d-none d-sm-inline-block">Wishlist</span>
-                                </a>
-                                <a data-bs-toggle="offcanvas" href="#offcanvas_cart" class="btn btn-light">
-                                    <i class="fa fa-shopping-cart"></i> <span class="ms-1">My cart </span>
-                                </a>
-                            </div>
-                        </div> <!-- col end.// -->
-                        <div class="col-lg-5 col-md-12 col-12">
-                            <form action="#" class="">
-                                <div class="input-group">
-                                    <input type="search" class="form-control" style="width:55%" placeholder="Search">
-                                    <select class="form-select">
-                                        <option value="">All type</option>
-                                        <option value="codex">Special</option>
-                                        <option value="comments">Only best</option>
-                                        <option value="content">Latest</option>
-                                    </select>
-                                    <button class="btn btn-primary"> <i class="fa fa-search"></i> </button>
-                                </div> <!-- input-group end.// -->
-                            </form>
-                        </div> <!-- col end.// -->
-        
-                    </div> <!-- row end.// -->
-                </div> <!-- container end.// -->
-            </section> <!-- header-main end.// -->
-        
-            <nav class="navbar navbar-light bg-gray-light navbar-expand-lg">
-                <div class="container">
-                    <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-        
-                    <div class="collapse navbar-collapse" id="navbar_main">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link ps-0" href="#"> Categories </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Hot offers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Gift boxes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Menu item</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Menu name</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown">
-                                    Others
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li> <a class="dropdown-item" href="#">Submenu one </a> </li>
-                                    <li> <a class="dropdown-item" href="#">Submenu two</a> </li>
-                                    <li> <a class="dropdown-item" href="#">Submenu three</a> </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div> <!-- collapse end.// -->
-                </div> <!-- container end.// -->
-            </nav> <!-- navbar end.// -->
-        </header> <!-- section-header end.// -->
+    <header class="bg-blue-50">
+        <nav class="py-4 border-b">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-12 gap-4">
+                    <a href="http://bootstrap-ecommerce.com" class="col-span-2">
+                        <img class="logo" height="40" src="@/assets/images/logo.svg">
+                    </a>
+                    <Form class="col-span-7">
+                        <FormItem>
+                            <Input type="text" placeholder="Search">
+                            <template #suffix>
+                                <Dropdown>
+                                    <a class="ant-dropdown-link flex" @click.prevent>
+                                        Hover me
+                                        <Icon icon="icon-park-outline:download" />
+                                    </a>
+                                    <template #overlay>
+                                        <Menu>
+                                            <MenuItem key="1">
+                                            <UserOutlined />
+                                            1st menu item
+                                            </MenuItem>
+                                            <MenuItem key="2">
+                                            <UserOutlined />
+                                            2nd menu item
+                                            </MenuItem>
+                                            <MenuItem key="3">
+                                            <UserOutlined />
+                                            3rd item
+                                            </MenuItem>
+                                        </Menu>
+                                    </template>
+                                    <Button type="text">
+                                        <Icon icon="icon-park-outline:download" />
+                                    </Button>
+                                </Dropdown>
+                            </template>
+                            </Input>
+                        </FormItem>
+                    </Form>
+                    <div class="col-span-3 flex gap-4">
+                        <Button type="default">
+                            <Icon icon="icon-park-outline:download" />
+                            <span>text</span>
+                        </Button>
+                        <Button type="default">
+                            <Icon icon="icon-park-outline:download" />
+                            <span>text</span>
+                        </Button>
+                        <Button type="default">
+                            <Icon icon="icon-park-outline:download" />
+                            <span>text</span>
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="py-4 border-b">
+            <div class="container mx-auto px-4">
+                <ul class="flex">
+                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
+                </ul>
+            </div>
+        </nav>
+    </header>
 </template>
+<script setup lang="ts">
+import { Dropdown, Menu, MenuItem, Input, Form, FormItem, Button } from "ant-design-vue";
+import { Icon } from '@iconify/vue';
+</script>
