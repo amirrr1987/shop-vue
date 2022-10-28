@@ -7,49 +7,62 @@ const router = createRouter({
 
     {
       path: '/',
-      name: 'page-index-1',
-      component: () => import('@/views/page-index-2.vue')
+      name: 'index',
+      component: () => import('@/views/index.vue'),
+      children: [
+        {
+          path: '/',
+          name: 'page-index-1',
+          component: () => import('@/views/page-index-1.vue')
+        },
+        {
+          path: '/1',
+          name: 'page-index-1',
+          component: () => import('@/views/page-index-2.vue')
+        },
+        {
+          path: '/2',
+          name: 'page-index-2',
+          component: () => import('@/views/page-index-2.vue')
+        },
+        {
+          path: '/3',
+          name: 'page-index-3',
+          component: () => import('@/views/page-index-3.vue')
+        },
+        {
+          path: '/4',
+          name: 'page-item-detail',
+          component: () => import('@/pages/page-item-detail.vue')
+        },
+        {
+          path: '/5',
+          name: 'page-items-grid',
+          component: () => import('@/pages/page-items-grid.vue')
+        },
+        {
+          path: '/6',
+          name: 'page-items-list',
+          component: () => import('@/pages/page-items-list.vue')
+        },
+        {
+          path: '/7',
+          name: 'page-order-cart',
+          component: () => import('@/pages/page-order-cart.vue')
+        },
+        {
+          path: '/8',
+          name: 'page-order-form',
+          component: () => import('@/pages/page-order-form.vue')
+        },
+        {
+          path: '/9',
+          name: 'page-profile',
+          component: () => import('@/pages/page-profile.vue')
+        },
+      ]
     },
-    {
-      path: '/page-index-2',
-      name: 'page-index-2',
-      component: () => import('@/views/page-index-2.vue')
-    },
-    {
-      path: '/page-index-3',
-      name: 'page-index-3',
-      component: () => import('@/views/page-index-3.vue')
-    },
-    {
-      path: '/page-item-detail',
-      name: 'page-item-detail',
-      component: () => import('@/views/page-item-detail.vue')
-    },
-    {
-      path: '/page-items-grid',
-      name: 'page-items-grid',
-      component: () => import('@/views/page-items-grid.vue')
-    },
-    {
-      path: '/page-items-list',
-      name: 'page-items-list',
-      component: () => import('@/views/page-items-list.vue')
-    },
-    {
-      path: '/page-order-cart',
-      name: 'page-order-cart',
-      component: () => import('@/views/page-order-cart.vue')
-    },
-    {
-      path: '/page-order-form',
-      name: 'page-order-form',
-      component: () => import('@/views/page-order-form.vue')
-    },
-    {
-      path: '/page-profile',
-      name: 'page-profile',
-      component: () => import('@/views/page-profile.vue')
-    },
+
   ]
 })
 
