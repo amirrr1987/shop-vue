@@ -7,7 +7,7 @@
                 Blog posts</h3>
             <div class="grid grid-cols-12 gap-8">
                 <template v-for="(item, index) in 4">
-                    <figure class="col-span-3 ">
+                    <figure class="col-span-12 md:col-span-6 lg:col-span-3 ">
                         <img class="aspect-3-2 rounded" :src="`/src/assets/images/posts/${index + 1}.webp`" alt="">
                         <figcaption class="py-2">
                             <time class="mb-1 box-border block text-sm text-[rgba(157,161,167,1)]"
@@ -35,7 +35,7 @@ import { Dropdown, Menu, MenuItem, Input, Form, FormItem, Button } from "ant-des
 import { Icon } from '@iconify/vue';
 </script>
 <style>
-.aspect-3-2{
+.aspect-3-2 {
     aspect-ratio: 3/2;
 }
 </style>

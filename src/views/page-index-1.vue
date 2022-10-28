@@ -1,15 +1,8 @@
 <template>
-
 	<TheIntro />
 	<TheNewproducts />
 	<TheFeature />
 	<TheBlogPosts />
-
-
-
-
-<!-- offcanvas -->
-
 </template>
 <script setup lang="ts">
 import TheIntro from '@/components/TheIntro.vue';
