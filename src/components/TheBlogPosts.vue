@@ -15,6 +15,7 @@
                                 <i class="box-border inline-block font-black not-italic leading-none"></i>
                                 23.12.2021
                             </time>
+                            
                             <h6
                                 class="mt-0 mb-1 box-border text-base font-semibold leading-tight text-[rgba(33,37,41,1)] hover:text-[rgba(10,88,202,1)]">
                                 How to promote brands</h6>

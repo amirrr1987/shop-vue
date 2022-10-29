@@ -1,56 +1,68 @@
 <template>
-    <header class="bg-blue-50">
+    <header class="">
         <nav class="py-4 border-b">
             <div class="container mx-auto px-4">
-                <div class="grid grid-cols-12 gap-4">
+                <div class="grid grid-cols-12 gap-4 items-center">
                     <a href="http://bootstrap-ecommerce.com" class="col-span-2">
                         <img class="logo" height="40" src="@/assets/images/logo.svg">
                     </a>
-                    <Form class="col-span-7">
-                        <FormItem>
-                            <Input type="text" placeholder="Search">
+                    <Form class="col-span-5">
+                        <FormItem no-style>
+                            <Input type="text" placeholder="Search" class="bg-light-50">
                             <template #suffix>
-                                <Dropdown>
-                                    <a class="ant-dropdown-link flex" @click.prevent>
-                                        Hover me
-                                        <Icon icon="icon-park-outline:download" />
-                                    </a>
+                                <Dropdown class="w-max">
+                                    <Button type="default"
+                                        class="!flex justify-center items-center gap-x-4 !border-0 !border-l">
+                                        <span class="-order-1">All Types</span>
+                                        <template #icon>
+                                            <Icon icon="ant-design:down-outlined" />
+                                        </template>
+                                    </Button>
                                     <template #overlay>
                                         <Menu>
                                             <MenuItem key="1">
-                                            <UserOutlined />
+                                            <Icon icon="ant-design:down-outlined" />
                                             1st menu item
                                             </MenuItem>
                                             <MenuItem key="2">
-                                            <UserOutlined />
+                                            <Icon icon="ant-design:down-outlined" />
                                             2nd menu item
                                             </MenuItem>
                                             <MenuItem key="3">
-                                            <UserOutlined />
+                                            <Icon icon="ant-design:down-outlined" />
                                             3rd item
                                             </MenuItem>
                                         </Menu>
                                     </template>
-                                    <Button type="text">
-                                        <Icon icon="icon-park-outline:download" />
-                                    </Button>
+
                                 </Dropdown>
+                                <Button type="primary" class="!flex justify-center items-center -mr-3 -my-1 !h-10 w-11">
+                                    <template #icon>
+                                        <Icon class="!text-white" icon="fe:search" />
+                                    </template>
+                                </Button>
                             </template>
                             </Input>
                         </FormItem>
                     </Form>
-                    <div class="col-span-3 flex gap-4">
-                        <Button type="default">
-                            <Icon icon="icon-park-outline:download" />
-                            <span>text</span>
+                    <div class="col-span-3 col-start-10 flex gap-4">
+                        <Button type="default" size="large" class="flex items-center gap-x-4">
+                            <template #icon>
+                                <Icon icon="icon-park-outline:user" />
+                            </template>
+                            <span>Sign in</span>
                         </Button>
-                        <Button type="default">
-                            <Icon icon="icon-park-outline:download" />
-                            <span>text</span>
+                        <Button type="default" size="large" class="flex items-center gap-x-4">
+                            <template #icon>
+                                <Icon icon="icon-park-outline:like" />
+                            </template>
+                            <span>Wishlist</span>
                         </Button>
-                        <Button type="default">
-                            <Icon icon="icon-park-outline:download" />
-                            <span>text</span>
+                        <Button type="default" size="large" class="flex items-center gap-x-4">
+                            <template #icon>
+                                <Icon icon="ant-design:shopping-cart-outlined" />
+                            </template>
+                            <span>My cart</span>
                         </Button>
                     </div>
                 </div>
@@ -59,12 +71,36 @@
         <nav class="py-4 border-b">
             <div class="container mx-auto px-4">
                 <ul class="flex">
-                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">Categories</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">Hot offers</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">Gift boxes</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">Projects</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">Menu item</Button></RouterLink>
+                    <RouterLink to="/"><Button type="link">Menu name</Button></RouterLink>
+                    <Dropdown class="w-max">
+                        <Button type="text" class="!flex justify-center items-center gap-x-4">
+                            <span class="-order-1">All Types</span>
+                            <template #icon>
+                                <Icon icon="ant-design:down-outlined" />
+                            </template>
+                        </Button>
+                        <template #overlay>
+                            <Menu>
+                                <MenuItem key="1">
+                                <Icon icon="ant-design:down-outlined" />
+                                1st menu item
+                                </MenuItem>
+                                <MenuItem key="2">
+                                <Icon icon="ant-design:down-outlined" />
+                                2nd menu item
+                                </MenuItem>
+                                <MenuItem key="3">
+                                <Icon icon="ant-design:down-outlined" />
+                                3rd item
+                                </MenuItem>
+                            </Menu>
+                        </template>
+                    </Dropdown>
                     <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
                 </ul>
             </div>

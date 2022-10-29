@@ -6,7 +6,7 @@
                 <template v-for="(item,index) in 6" :key="index">
                     <figure class="grid grid-cols-[max-content,1fr] gap-4 col-span-12 md:col-span-6 lg:col-span-4">
                         <div class="rounded-full bg-white p-4 aspect-square flex justify-center items-center">
-                            <Icon class="text-blue-500 text-3xl" icon="icon-park-outline:search" />
+                            <Icon class="text-blue-500 text-3xl" icon="icon-park-solid:home" />
                         </div>
                         <figcaption>
                             <h6 class="box-border block text-base font-semibold leading-tight text-[rgba(33,37,41,1)]">Worldwide shipping</h6>
