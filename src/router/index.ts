@@ -11,17 +11,17 @@ const router = createRouter({
       component: () => import('@/views/index.vue'),
       children: [
         {
-          path: '/',
+          path: '/1',
           name: 'pageIndex1',
           component: () => import('@/views/page-index-1.vue')
         },
         {
-          path: '/1',
+          path: '/2',
           name: 'page-index-1',
           component: () => import('@/views/page-index-2.vue')
         },
         {
-          path: '/2',
+          path: '/3',
           name: 'page-index-2',
           component: () => import('@/views/page-index-2.vue')
         },

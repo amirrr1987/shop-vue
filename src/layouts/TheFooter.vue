@@ -2,13 +2,17 @@
     <footer class="py-12 bg-blue-50">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-12 gap-4 text-base">
-                <aside class="col-span-12 lg:col-span-3">
-                    <article class="">
-                        <img src="@/assets/images/logo.webp" class="">
-                        <p class="py-4"> © 2018- 2021 Templatemount. <br> All rights reserved. </p>
-                    </article>
+
+                <aside class="col-span-4 md:col-span-2">
+                    <h6 class="font-semibold mb-1">Store</h6>
+                    <ul class="">
+                        <li> <a href="#">About us</a></li>
+                        <li> <a href="#">Find store</a></li>
+                        <li> <a href="#">Categories</a></li>
+                        <li> <a href="#">Blogs</a></li>
+                    </ul>
                 </aside>
-                <aside class="col-span-6 md:col-span-2">
+                <aside class="col-span-4 md:col-span-2">
                     <h6 class="">Store</h6>
                     <ul class="">
                         <li> <a href="#">About us</a></li>
@@ -17,7 +21,7 @@
                         <li> <a href="#">Blogs</a></li>
                     </ul>
                 </aside>
-                <aside class="col-span-6 md:col-span-2">
+                <aside class="col-span-4 md:col-span-2">
                     <h6 class="">Store</h6>
                     <ul class="">
                         <li> <a href="#">About us</a></li>
@@ -26,19 +30,9 @@
                         <li> <a href="#">Blogs</a></li>
                     </ul>
                 </aside>
-                <aside class="col-span-6 md:col-span-2">
-                    <h6 class="">Store</h6>
-                    <ul class="">
-                        <li> <a href="#">About us</a></li>
-                        <li> <a href="#">Find store</a></li>
-                        <li> <a href="#">Categories</a></li>
-                        <li> <a href="#">Blogs</a></li>
-                    </ul>
-                </aside>
-                <aside class="col-span-6 md:col-span-6 lg:col-span-3">
+                <aside class="col-span-12 md:col-span-6 lg:col-span-3">
                     <h6 class="mb-1">Newsletter</h6>
                     <p class="mb-3">Stay in touch with latest updates about our products and offers </p>
-
                     <Form>
                         <FormItem>
                             <Input class="" type="text" placeholder="Email">
@@ -50,8 +44,12 @@
                             </Input>
                         </FormItem>
                     </Form>
-
-
+                </aside>
+                <aside class="col-span-12 lg:col-span-3">
+                    <article class="">
+                        <img src="@/assets/images/logo.webp" class="">
+                        <p class="py-4"> © 2018- 2021 Templatemount. <br> All rights reserved. </p>
+                    </article>
                 </aside>
             </div>
             <div class="flex justify-between">
