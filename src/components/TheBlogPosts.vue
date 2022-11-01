@@ -1,7 +1,7 @@
 <template>
 
     <section class="py-12">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-8">
             <h3
                 class="mb-8 box-border font-semibold leading-tight xl:text-3xl text-[rgba(33,37,41,1)] text-[calc(1.3rem_+_0.6vw)]">
                 Blog posts</h3>

@@ -1,6 +1,6 @@
 <template>
     <footer class="py-12 bg-blue-50">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-8">
             <div class="grid grid-cols-12 gap-4 text-base">
 
                 <aside class="col-span-4 md:col-span-2">

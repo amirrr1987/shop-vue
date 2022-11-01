@@ -1,7 +1,7 @@
 <template>
     <header class="">
         <nav class="py-4 border-b">
-            <div class="container mx-auto px-4">
+            <div class="container mx-auto px-8">
                 <div class="grid grid-cols-12 gap-4 items-center">
                     <a href="http://bootstrap-ecommerce.com" class="col-span-2">
                         <img class="logo" height="40" src="@/assets/images/logo.svg">
@@ -71,12 +71,10 @@
         <nav class="py-4 border-b">
             <div class="container mx-auto px-4">
                 <ul class="flex">
-                    <RouterLink to="/"><Button type="link">Categories</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">Hot offers</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">Gift boxes</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">Projects</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">Menu item</Button></RouterLink>
-                    <RouterLink to="/"><Button type="link">Menu name</Button></RouterLink>
+                    <RouterLink to="/categories"><Button type="link">Categories</Button></RouterLink>
+                    <RouterLink to="/hot-offers"><Button type="link">Hot offers</Button></RouterLink>
+                    <RouterLink to="/gift-boxes"><Button type="link">Gift boxes</Button></RouterLink>
+                    <RouterLink to="/projects"><Button type="link">Projects</Button></RouterLink>
                     <Dropdown class="w-max">
                         <Button type="text" class="!flex justify-center items-center gap-x-4">
                             <span class="-order-1">All Types</span>
@@ -101,7 +99,6 @@
                             </Menu>
                         </template>
                     </Dropdown>
-                    <RouterLink to="/"><Button type="link">sdf</Button></RouterLink>
                 </ul>
             </div>
         </nav>
